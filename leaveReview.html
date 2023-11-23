@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave-review</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<div data-modal-open-id="PROSZE-ZMIENIC" class="modal modal-leave-review-container">
+  <div class="modal-leave-review-wraper">
+    <form class="modal-leave-review">
+      <button
+        data-modal-close
+        type="button"
+        class="modal-leave-review-close-btn modal-close"
+      >
+        <svg class="modal-leave-review-close-icon">
+          <use href="./images/modal-icon.svg#icon-cancel"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-leave-tittle">
+        LEAVE A REVIEW
+        ABOUT <span class=".modal-leave-review-tittle-span">OUR CHOCOLATE</span>
+      </h2>
+      <label class="modal-leave-review-label">
+        <span class="modal-name">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-leave-review-input"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="3"
+          />
+        </span>
+      </label>
+
+      <label class="modal-leave-review-label">
+        <span class="modal-email">
+          <input
+            type="email"
+            name="user_email"
+            class="modal-leave-review-input"
+            placeholder="Email"
+          />
+        </span>
+      </label>
+      <label class="modal-leave-review-label modal-leave-review-label-svg">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-leave-review-input modal-leave-review-input-phone"
+          placeholder="Phone number"
+        />
+        <svg class="modal-leave-review-icon" width="24" height="18">
+          <use href="./images/symbol-defs.svg#icon-bandera"></use>
+        </svg>
+        <span class="modal-leave-review-phone-code">+380</span>
+      </label>
+      <label class="modal-leave-review-field modal-leave-review-comment">
+        <textarea
+          name="user_message"
+          class="modal-leave-review-input modal-leave-review-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        class="modal-leave-review-btn modal-close"
+        data-modal="PROSZE-ZMIENIC"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
